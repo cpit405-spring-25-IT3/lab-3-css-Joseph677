@@ -4,8 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 3: CSS</title>
+  <style>
+    p > span { color: red; }
+    #header span { color: pink; }
+    span { color: green; }
+    #header *:last-child { color: orange; }
+    #header span:first-child:hover { color: blue; }
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <div class="image-preview">
+    <img src="https://cpit405.gitlab.io/images/KAU_logo.png" alt="KAU logo">
+  </div>
+
+  <div id="header">
+      <span class="myclass1">Every</span>
+      <span class="myclass2">one can</span>
+      <span class="myclass3">success.</span>
+  </div>
+
+  <p> One machine can do the work of fifty ordinary men.
+      <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+  </p>
+
+  <table>
+      <thead>
+          <tr>
+              <th></th>
+              <th>Color</th>
+              <th>Color when mouse over</th>
+          </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td><strong>span.myclass1</strong></td>
+          <td>Pink</td>
+          <td>Blue</td>
+      </tr>
+      <tr>
+          <td><strong>span.myclass2</strong></td>
+          <td>Pink</td>
+          <td>Pink</td>
+      </tr>
+      <tr>
+          <td><strong>span.myclass3</strong></td>
+          <td>Orange</td>
+          <td>Orange</td>
+      </tr>
+      <tr>
+          <td><strong>span.myclass4</strong></td>
+          <td>Red</td>
+          <td>Red</td>
+      </tr>
+      </tbody>
+  </table>
 </body>
 </html>
